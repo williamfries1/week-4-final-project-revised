@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reel Flix || Movie Search</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <span class="logo__img" width="50px">🎬</span>
+        <div class="logo__title"><span>Reel</span> Flix</div>
+      </div>
+      <form class="search__form" id="searchForm">
+        <div class="search__form-group">
+          <input
+            class="search__form-input"
+            type="text"
+            id="searchInput"
+            placeholder="Search for your favorite movies..."
+            required
+          />
+          <button class="search__form-btn" type="submit">🔍</button>
+        </div>
+      </form>
+    </nav>
+    <main>
+      <div class="filters">
+        <p id="resultsInfo" class="resultsInfo"><span>Showing: </span></p>
+        <div>
+          <label for="filterSelect">Sort:</label>
+          <select id="filterSelect">
+            <option value="default">Default</option>
+            <option value="a-z">A - Z</option>
+            <option value="z-a">Z - A</option>
+            <option value="newest">Newest</option>
+            <option value="oldest">Oldest</option>
+          </select>
+        </div>
+      </div>
+      <div class="movies__grid" id="moviesGrid">
+        
+      </div>
+    </main>
+
+    <footer>
+      <p>Created by William Fries III Powered by OMDBAPI.</p>
+    </footer>
+  </body>
+</html>
